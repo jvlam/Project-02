@@ -148,7 +148,7 @@ header {
 }
 
 .main-hero {
-    background: #FFFCF4;    
+    background: #FFFCF4;
     padding-bottom: 65px;
 }
 
@@ -163,13 +163,19 @@ header {
     position: relative;
 }
 
+.media-block .lesson-guy {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
 .media-block .courses {
     position: absolute;
     bottom: 48px;
     right: 0px;
     background: #FFFFFF;
     width: 270px;
-    height: 244px;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
 }
@@ -177,8 +183,7 @@ header {
 .media-block .course {
     display: flex;
     align-items: center;
-    margin-top: 24px;
-    padding-left: 24px;
+    padding: 16.7px 0 16.7px 24px;
 }
 
 .media-block .course .course-logo {
@@ -272,14 +277,14 @@ header {
     margin-top: 48px;
 }
 
-.content-block .stat {
+/* .content-block .stat {
     display: flex;
     margin-top: 15px;
-}
+} */
 
-.content-block .stat .student-joined {
+/* .content-block .stat .student-joined {
     margin-right: 28px;
-}
+} */
 
 /* ============= popular ================ */
 
