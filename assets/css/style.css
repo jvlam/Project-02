@@ -1,0 +1,750 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #171100;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+
+}
+
+.btn {
+    display: inline-block;
+    background: #171100;
+    border-radius: 24.5px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 16px;
+    line-height: 50px;
+    min-width: 118px;
+}
+
+.btn:hover {
+    background: #FFB900;
+
+}
+
+.btn-137 {
+    padding: 16.5px 35.9px;
+    margin-top: 38px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FFB900;
+    border-radius: 25px;
+}
+
+/* ================common================ */
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    /* hạn chế dùng riêng lẻ 
+       margin 0 : vì sau này chỗ khác cần margin trên dưới
+       sẽ ghi đè, do đó tránh đưa những cái riêng biệt vào
+       chỉ đưa những cái chung chung vào để dùng chung cho
+       mọi trường hợp 
+    */
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+/* ================ header ================ */
+
+header {
+    background: #FFFCF4;
+    padding: 36px 0 8px;
+}
+
+.nav .nav-wrapper,
+.nav .logo {
+    width: 50%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo {
+    width: 85px;
+    height: 34px;
+}
+
+.nav .nav-list {
+    margin-left: auto;
+    display: flex;
+    margin-right: 49px;
+}
+
+.nav .nav-item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5F5B53;
+    padding: 13px 21px;
+    position: relative;
+}
+
+.nav .nav-item:hover,
+.nav li.active .nav-item {
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav li.active .nav-item::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 11px;
+    left: 21px;
+}
+
+.nav .sign-up {
+    width: 144px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+.nav .sign-up:hover {
+    opacity: 0.9;
+    background: #171100;
+}
+
+/* ================ hero ================ */
+
+.hero {
+    display: flex;
+    padding-top: 56px;
+}
+
+.main-hero {
+    background: #FFFCF4;    
+    padding-bottom: 65px;
+}
+
+.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+
+.media-block {
+    width: 50%;
+    position: relative;
+}
+
+.media-block .courses {
+    position: absolute;
+    bottom: 48px;
+    right: 0px;
+    background: #FFFFFF;
+    width: 270px;
+    height: 244px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.media-block .course {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    padding-left: 24px;
+}
+
+.media-block .course .course-logo {
+    margin-right: 16px;
+}
+
+.media-block .course .course-qty {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #5F5B53;
+}
+
+.media-block .course .course-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+    margin-top: 5px;
+}
+
+.content-block {
+    width: 50%;
+}
+
+.content-block {
+    padding-left: 130px;
+}
+
+.content-block .heading {
+    font-family: 'Sen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    color: #171100;
+    padding-top: 64px;
+}
+
+.content-block .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+    margin-top: 22px;
+}
+
+.content-block .action {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.content-block .action span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.content-block .action .course-btn {
+    width: 180px;
+    height: 64px;
+    background: #FFB900;
+    border-radius: 32px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-right: 28px;
+}
+
+.content-block .watch {
+    display: flex;
+    align-items: center;
+}
+
+.content-block .watch .icon {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 14px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.content-block .people-engagement {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #5F5B53;
+    margin-top: 48px;
+}
+
+.content-block .stat {
+    display: flex;
+    margin-top: 15px;
+}
+
+.content-block .stat .student-joined {
+    margin-right: 28px;
+}
+
+/* ============= popular ================ */
+
+.popular {
+    padding-top: 200px;
+
+}
+
+.main-popular {
+    background: #E5E5E5;
+    padding-bottom: 200px;
+}
+
+.popular .title {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.popular .desc {
+    margin-top: 16px;
+    width: 458px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #5F5B53;
+}
+
+.popular .wrap {
+    position: relative;
+}
+
+.popular .navigation {
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: -16px;
+}
+
+.courses-desc {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-desc .course-img {
+    width: 370px;
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+}
+
+.courses-desc .course-item .desc-detail {
+    width: 370px;
+    padding: 16px 22px 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: -3px;
+}
+
+.courses-desc .course-item .title {
+    display: flex;
+    align-items: center;
+}
+
+.courses-desc .course-item .star-rate {
+    margin-left: auto;
+    line-height: 38px;
+}
+
+.courses-desc .course-item .point {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #FEA31B;
+}
+
+.courses-desc .course-item .course-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+
+.desc-detail .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.desc-detail .course-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.desc-detail .price .course-price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.desc-detail .price .book-now {
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* ============= feedback ================ */
+.review {
+    background: #2E2100;
+    height: 380px;
+}
+
+.review .body {
+    padding-top: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.review .reviewer .logo-reviewer {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review .reviewer .name {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #F7F7F7;
+    margin-top: 18px;
+}
+
+.review .reviewer .course-joined {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #BFBCB3;
+}
+
+.review .reviewer .icon-review {
+    margin-top: 28px;
+}
+
+.review .review-write {
+    width: 740px;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.review .review-write .quote {
+    position: absolute;
+    left: -29px;
+    top: -24px;
+}
+
+/* ============= learner platform ================ */
+
+.learner-platform {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.learner-platform .body {
+    display: flex;
+}
+
+.learner-platform .main-content {
+    width: 470px;
+    margin-left: auto;
+}
+
+.learner-platform .image-wrapper {
+    display: flex;
+}
+
+.learner-platform .image-wrapper img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.learner-platform .image-wrapper .left-side {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.learner-platform .main-content .title {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+    padding-top: 48px;
+}
+
+.learner-platform .main-content .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+    margin-top: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.learner-platform .main-content .report {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+    margin-top: 16px;
+}
+
+.join-course {
+    display: flex;
+    margin-top: 200px;
+}
+
+.join-course .join-course-desc .title {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+    width: 570px;
+    padding-top: 67px;
+}
+
+.join-course .join-course-desc .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+
+}
+
+.join-course .join-course-img img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* ============= Blog ================ */
+.blog {
+    background: #FFFCF4;
+    height: 878px
+}
+
+.blog-body {
+    padding-top: 96px;
+}
+
+.blog .blog-head {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #130606;
+
+}
+
+.blog .blog-desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #696262;
+    max-width: 448px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog .blog-item {
+    margin-top: 55px;
+}
+
+.blog .blog-detail {
+    padding: 20px 20px 28px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    margin-top: -3px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.blog-detail .date {
+    display: flex;
+}
+
+.blog-detail .date .circle-icon {
+    margin-right: 4px;
+}
+
+.blog-detail .date .create-date {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+
+.blog-detail .line {
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+    margin-top: 12px;
+}
+
+.blog .blog-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+    margin-top: 12px;
+}
+
+.blog .read-more {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+
+.blog .blog-img {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .blog-detail {
+    max-width: 370px;
+}
+
+.blog-body .three-dot {
+    margin-top: 38px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    height: 428px;
+    background: #2E2100;
+}
+
+.footer-body {
+    padding-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-body .line {
+    width: 130px;
+    height: 1px;
+    background: #59554B;
+    margin-top: 14px;
+}
+
+.footer-body .footer-title {
+    width: 267px;
+}
+
+.footer-body .footer-title .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+    margin-top: 18px;
+
+}
+
+.footer-body .footer-title .social-contact {
+    margin-top: 18px;
+}
+
+.social-contact img {
+    margin-right: 18px;
+}
+
+.footer-body .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+.address .location,
+.support .list-support li:first-child,
+.about-company .list-info li:first-child {
+    margin-top: 28px;
+}
+
+.support .list-support li,
+.about-company .list-info li {
+    margin-top: 12px;
+}
+
+.support .list-support li a,
+.about-company .list-info li a {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.address .location {
+    display: flex;
+    width: 231px;
+}
+
+.address .phone p,
+.address .email p,
+.address .location p {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB2;
+}
+
+.address .email {
+    display: flex;
+    margin-top: 12px;
+}
+
+
+.address .phone {
+    display: flex;
+    margin-top: 12px;
+}
+
+.address .phone strong,
+.address .email strong,
+.address .location strong {
+    color: #ffff;
+}
