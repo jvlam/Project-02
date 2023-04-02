@@ -1,1 +1,1 @@
-# URL to project: [Education Platform Landing Page](https://jvlam.github.io/Project-02/)
+# URL to project: [Education Platform Landing Page](https://vuanhlam.github.io/Education-Platform-Landing-Page/)
